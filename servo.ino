@@ -1,13 +1,13 @@
 
 #include <Servo.h>
 
-Servo servo_16;
+Servo servo;
 
 void setup()
 {
-  servo_16.attach(16);
+  servo.attach(16);
 
-  servo_16.write(0);
+  servo.write(0);
   delay(0);
 
 }
@@ -16,11 +16,11 @@ void setup()
 void loop()
 {
 
-    servo_16.write(0);
+    servo.write(0);
     delay(1000);
-    servo_16.write(90);
+    servo.write(90);
     delay(1000);
-    servo_16.write(180);
+    servo.write(180);
     delay(1000);
 
 }
